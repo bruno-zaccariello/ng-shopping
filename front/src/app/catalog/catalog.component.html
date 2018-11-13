@@ -1,0 +1,9 @@
+<section class="shopDisplay">
+  <div class="produto" *ngFor="let produto of produtos">
+    <div class="imagem"></div>
+    <div class="nome"><h2>{{produto.nome}}</h2></div>
+    <a class="preco" routerLink="/produto/{{produto.id}}">
+      <div>R${{produto.preco}}</div>
+    </a>
+  </div>
+</section>

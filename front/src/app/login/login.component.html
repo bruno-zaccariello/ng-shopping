@@ -1,0 +1,18 @@
+<div style='display: inline'>
+  <div id="userTk">{{userTk}}</div>
+</div>
+
+<div *ngIf="!userTk">
+  <label>
+    login
+    <input name="login" [(ngModel)]="login">
+  </label>
+  <label>
+    senha
+    <input name="senha" [(ngModel)]="senha" type="password">
+  </label>
+
+  <span (click)="makeLogin()" style="cursor: pointer">
+    Login
+  </span>
+</div>

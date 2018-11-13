@@ -1,0 +1,27 @@
+<div class="productWrapper" *ngIf="produto">
+
+  <div class="pdtContent">
+  
+    <div class="pdtImage">
+      <img class="holder"/>
+    </div>
+
+    <div class="pdtInfo">
+
+      <h2 class="pdtName">Produto: {{produto.nome}}</h2>
+
+      <h3 class="pdtPrice">R${{produto.preco}}</h3>
+
+    </div>
+    
+  </div>
+
+  <div>
+    {{produto.descricao}}
+  </div>
+
+  <button (click)="addCart()" class="buy">
+    Comprar
+  </button>
+
+</div>

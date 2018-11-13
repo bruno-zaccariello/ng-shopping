@@ -1,0 +1,63 @@
+@import "../variables";
+
+.shopDisplay {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+}
+
+.produto {
+    background-color: @ltblue;
+    border-radius: 15px;
+    height: 25em;
+
+    .flex_col();
+    justify-content: space-evenly;
+
+    h2 {
+        color: black;
+        font-size: 1.1em;
+        margin: 10px auto;
+    }
+
+    .imagem {
+        background-color: white;
+        border: 1px solid lighten(@ltblue, 15%);
+        height: 60%;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .nome {
+        color: black;
+        margin: auto;
+        width: 90%;
+    }
+
+    .preco {
+        background-color: @bgblue;
+        border-radius: 4px;
+        color: black;
+        font-size: 1.5em;
+        margin: auto;
+        padding: 8px;
+        width: 70%;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .shopDisplay {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+@media screen and (max-width: 950px) {
+    .shopDisplay {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
